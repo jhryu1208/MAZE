@@ -27,7 +27,7 @@ void SetMaze(char Maze[21][21], PPOINT pPlayerPos, PPOINT pStartPos, PPOINT pEnd
 
 	pEndPos->x = 20;
 	pEndPos->y = 20;
-
+	
 	*pPlayerPos = *pStartPos;
 
 	strcpy_s(Maze[0],  "21100000000000000000");
@@ -72,6 +72,7 @@ void Output(char Maze[21][21], PPOINT pPlayerPos)
 		cout << endl;
 	}
 }
+
 void MoveUp(char Maze[21][21], PPOINT pPlayerPos)
 {
 	if (pPlayerPos->y - 1 >= 0) // 위로갈수록 i(행)가 작아진다. 따라서, y-1은 위로감을 의미
